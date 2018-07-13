@@ -2,34 +2,69 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <h1> Hangman </h1>
-  <h2> Overwatch </h2>
-  <p> Guess what the word is by entering letters! </p>
-  <div id="overwatchGuess">
-  <button id="genTerm" onclick="grabWord()"> Start Playing! </button>
+  <div class="row">
+    <div class="row titleRow"><h1 id="title"> Overwatch Hangman </h1>
+      <h2 id="subHead"> Enter letters and guess the word! </h2>
+      <div id="lossWinCount">
+        <div class="counter col-4">Losses <p id="lCo"></p></div>
+        <div class="counter col-4">Wins <p id="wCo"></p></div>
+        <div class="counter col-4">Chances Left <p id="lifeCounter"></p></div>
+      </div>
+    </div>
+    <button id="genTerm" class="btn btn-primary btn-block"> Start Playing! </button>
     <div id="termPlaced"></div>
-</div>
-  <h4> Press any letter on your keyboard to guess! </h4>
-    <div id="guessHere">
-      
+  </div>
+
+  <div class="row" id="overwatchGuess">
+    <div id="hangBord" class="col-6">
+      <p id="hangDesc">The Hangman</p>
+      <div id="imgHolder">
+        <div id="placeImg"></div>
+      </div>
+    </div>
+    <div id="letterButtons" class="col-sm">
+    <h4> Click a letter to guess! </h4>
+        <button id="A" class="letterOp btn btn-outline-warning" value="A">A</button>
+        <button id="B" class="letterOp btn btn-outline-warning" value="B">B</button>
+        <button id="C" class="letterOp btn btn-outline-warning" value="C">C</button>
+        <button id="D" class="letterOp btn btn-outline-warning" value="D">D</button>
+        <button id="E" class="letterOp btn btn-outline-warning" value="E">E</button>
+        <button id="F" class="letterOp btn btn-outline-warning" value="F">F</button>
+        <button id="G" class="letterOp btn btn-outline-warning" value="G">G</button>
+        <button id="H" class="letterOp btn btn-outline-warning" value="H">H</button>
+        <button id="I" class="letterOp btn btn-outline-warning" value="I">I</button>
+        <button id="J" class="letterOp btn btn-outline-warning" value="J">J</button>
+        <button id="K" class="letterOp btn btn-outline-warning" value="K">K</button>
+        <button id="L" class="letterOp btn btn-outline-warning" value="L">L</button>
+        <button id="M" class="letterOp btn btn-outline-warning" value="M">M</button>
+        <button id="N" class="letterOp btn btn-outline-warning" value="N">N</button>
+        <button id="O" class="letterOp btn btn-outline-warning" value="O">O</button>
+        <button id="P" class="letterOp btn btn-outline-warning" value="P">P</button>
+        <button id="Q" class="letterOp btn btn-outline-warning" value="Q">Q</button>
+        <button id="R" class="letterOp btn btn-outline-warning" value="R">R</button>
+        <button id="S" class="letterOp btn btn-outline-warning" value="S">S</button>
+        <button id="T" class="letterOp btn btn-outline-warning" value="T">T</button>
+        <button id="U" class="letterOp btn btn-outline-warning" value="U">U</button>
+        <button id="V" class="letterOp btn btn-outline-warning" value="V">V</button>
+        <button id="W" class="letterOp btn btn-outline-warning" value="W">W</button>
+        <button id="X" class="letterOp btn btn-outline-warning" value="X">X</button>
+        <button id="Y" class="letterOp btn btn-outline-warning" value="Y">Y</button>
+        <button id="Z" class="letterOp btn btn-outline-warning" value="Z">Z</button>
+      </div>
+  </div>
 
 
-      <!-- <form id="frm1"> -->
-      <!-- <input type="text" name="letterguess">
-      <input type="submit" onclick="checkAnswer();">
-    </form> -->
-</div>
-
-
-  <script type="text/javascript" src="assets/javascript/game3.js"></script>
+  <script type="text/javascript" src="assets/javascript/game4.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>

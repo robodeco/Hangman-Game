@@ -22,7 +22,7 @@ document.getElementById("genTerm").onclick = function grabWord(){
   //then we need to make each letter come out as a dash
   answerArray = [];
 
-  for (var i = 0; i < res.length; i++){
+  for (var i = 0; i < res.length; i++) {
     answerArray[i] = "_";
 
     split = answerArray.join(" ");
@@ -30,13 +30,12 @@ document.getElementById("genTerm").onclick = function grabWord(){
     console.log(answerSplit);
   }
 
-remainingLetters = res.length;
+  remainingLetters = res.length;
 
-document.getElementById("termPlaced").innerHTML = split;
+  document.getElementById("termPlaced").innerHTML = split;
 
 }
 
-//some of the following code was taken from an online resource, and supposedly saves the pressed keyboard key to an array. i was hoping to make a function that checks both arrays for similarities, and if it comes up with one then the letter is revealed, but i've been unsuccesful.
 document.addEventListener('keyup', (function gameKeyup(event) {
 
   //converts unicode key value into a string

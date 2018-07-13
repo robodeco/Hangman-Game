@@ -1,0 +1,127 @@
+h1 {
+  font-family: "bignoodletoooblique";
+  font-size: 100px;
+  margin: auto;
+}
+
+h4 {
+  margin-left: 10px;
+}
+
+.row {
+  margin-top: 30px;
+}
+
+.titleRow {
+  margin: auto;
+  display: inline;
+}
+
+.hangPic {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.letterOp {
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  font-size: 25px;
+}
+
+.counter {
+  max-width: 150px;
+  max-height: 30px;
+  font-family: "koverwatch";
+  margin: 25px;
+  display: inline-block;
+  text-align: center;
+}
+
+#termPlaced {
+  align-content: center;
+  margin: auto;
+  text-align: center;
+  font-family: "koverwatch";
+  font-size: 50px;
+  color: #43484c;
+}
+
+#letterButtons {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "koverwatch";
+  align-content: center;
+}
+
+#title {
+  color: #f99e1a;
+  clear: both;
+}
+
+#genTerm {
+  border-color: #f99e1a;
+  background-color: #f99e1a;
+  color: white;
+  font-family: "bignoodletoooblique";
+  font-size: 25px;
+}
+
+#genTerm:hover {
+  background-color: white;
+  color: #f99e1a
+}
+
+#genTerm:disabled {
+  background-color: #f99e1a;
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#subHead {
+  color: #43484c;
+  margin: auto;
+  font-family: "koverwatch";
+  text-align: center;
+}
+
+#imgHolder {
+  margin: auto;
+  min-height: 300px;
+  align-content: auto;
+  max-width: 100%;
+}
+
+#lossWinCount {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+  font-size: 25px;
+  color: #B2B2B2;
+}
+
+#hangBord {
+  border-style: solid;
+  border-color: #B2B2B2;
+  align-content: center;
+  margin-bottom: 15px;
+  margin-left: 35px;
+}
+
+#placeImg {
+  align-content: center;
+  max-width: 400px;
+  min-height: 400px;
+  margin: auto;
+}
+
+#hangDesc {
+  font-size: 25px;
+  font-family: "koverwatch";
+  margin: auto;
+  text-align: center;
+  color: #B2B2B2;
+}
