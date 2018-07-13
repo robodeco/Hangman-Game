@@ -128,12 +128,12 @@ h4 {
 
 @font-face {
   font-family: "koverwatch";
-  src: url("/fonts/koverwatch.ttf")format("ttf")
-       url("/fonts/Koverwatch.woff")format('woff');
+  src: url("fonts/koverwatch.ttf")format("truetype"),
+       url("fonts/Koverwatch.woff")format('woff');
 }
 
 @font-face {
   font-family: "bignoodletoooblique";
-  src: url("/fonts/bignoodletoo.ttf")format('ttf'),
-       url("/fonts/bignoodletoo.woff")format('woff');
+  src: url("fonts/bignoodletoo.ttf")format('truetype'),
+       url("fonts/bignoodletoo.woff")format('woff');
 }
