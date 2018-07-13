@@ -125,3 +125,13 @@ h4 {
   text-align: center;
   color: #B2B2B2;
 }
+
+@font-face {
+  font-family: "koverwatch";
+  src: url("fonts/koverwatch.ttf");
+}
+
+@font-face {
+  font-family: "bignoodletoooblique";
+  src: url("fonts/bignoodletoo.ttf")
+}
